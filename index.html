@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0b1020" />
-    <title>Hello, World!</title>
+    <title>Hi, my name is nithin</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
@@ -81,6 +81,9 @@
         color: #cffafe;
         font: 400 .78rem/1 "DM Mono", monospace;
       }
+      nav { display: flex; justify-content: center; gap: .45rem; margin-bottom: 3.5rem; }
+      nav a { padding: .55rem .9rem; border-radius: 999px; color: #cbd5e1; font: 500 .78rem/1 "DM Mono", monospace; text-decoration: none; transition: background .2s, color .2s; }
+      nav a:hover, nav a[aria-current="page"] { color: #fff; background: rgba(255,255,255,.12); }
       .dot { width: .55rem; height: .55rem; border-radius: 50%; background: #5eead4; box-shadow: 0 0 14px #5eead4; }
       @keyframes arrive { from { opacity: 0; transform: translateY(22px) scale(.97); } to { opacity: 1; transform: none; } }
       @keyframes drift { to { transform: translate(5rem, 3rem) scale(1.15); } }
@@ -91,6 +94,11 @@
   <body>
     <div class="orb one"></div><div class="orb two"></div>
     <main>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
       <p class="eyebrow">A fresh beginning</p>
       <h1>Hello, World<span class="spark">!</span></h1>
       <p>Your next great idea starts with a single line of code. Make it bright, make it yours, and ship it.</p>
